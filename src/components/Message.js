@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Message = styled.div`
@@ -74,8 +74,7 @@ class Landing extends React.Component {
           </Thank>
           <ThankTwo style={{ color: this.props.Data.textColor }}>
             <i>
-              Congratulations. All of you deserve plenty of wholesome self-pats
-              . . .
+              Congrats! All of you deserve plenty of wholesome self-pats . . .
             </i>
           </ThankTwo>
           <Link to="/src">

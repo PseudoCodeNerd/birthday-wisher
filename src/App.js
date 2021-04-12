@@ -20,7 +20,7 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/">
-              <Message Data={Data} />
+            <Message Data={Data} />
           </Route>
           <Route path="/src">
             <Magazine />
