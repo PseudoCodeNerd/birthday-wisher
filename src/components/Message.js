@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import styled from "styled-components";
+import Magazine from "./Magazine";
 
 const Message = styled.div`
   white-space: nowrap;
@@ -75,7 +76,7 @@ class Landing extends React.Component {
           </Thank>
           <ThankTwo style={{ color: this.props.Data.textColor }}>
             <i>
-              Congratulations. All of you deserve plenty of wholesome self-pats
+              Cograts! All of you deserve plenty of wholesome self-pats
               . . .
             </i>
           </ThankTwo>
