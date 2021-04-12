@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import styled from "styled-components";
-import Magazine from "./Magazine";
 
 const Message = styled.div`
   white-space: nowrap;
@@ -66,7 +65,6 @@ const ThankTwo = styled.div`
 class Landing extends React.Component {
   render() {
     return (
-      <Router>
         <Container>
           <Message style={{ color: this.props.Data.textColor }}>
             <i>Venture</i> is finally complete!
@@ -76,7 +74,7 @@ class Landing extends React.Component {
           </Thank>
           <ThankTwo style={{ color: this.props.Data.textColor }}>
             <i>
-              Cograts! All of you deserve plenty of wholesome self-pats
+              Congratulations. All of you deserve plenty of wholesome self-pats
               . . .
             </i>
           </ThankTwo>
@@ -84,7 +82,6 @@ class Landing extends React.Component {
             <Button>Read Venture</Button>
           </Link>
         </Container>
-      </Router>
     );
   }
 }

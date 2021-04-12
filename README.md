@@ -1,10 +1,12 @@
-# Birthday Wisher
+## Venture Magazine Launch App
 
-A simple website for wishing a Happy Birthday to people you know. Simply replace your name and the other person's name in `src/data/Data.js` to use it. Optionally, change the text and theme colors if you like, in the same file.
+A simple webapp to launch the First Edition of ENSHIP Club's magazine - *Venture*.
+Also to thank the people who worked on it for 4 months.
 
-Also, make sure you change the `homepage` property in `package.json` to wherever you want to deploy your website. 
+Initially bootstrapped from [birthday-wisher](https://github.com/someshkar/birthday-wisher).
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
