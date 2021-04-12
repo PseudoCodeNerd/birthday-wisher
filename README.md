@@ -1,9 +1,10 @@
-## Venture Magazine Launch App
+# Venture Magazine Launch App
 
 A simple webapp to launch the First Edition of ENSHIP Club's magazine - *Venture*.
 Also to thank the people who worked on it for 4 months.
 
-Initially bootstrapped from [birthday-wisher](https://github.com/someshkar/birthday-wisher).
+Initially bootstrapped from somesh kar's [birthday-wisher](https://github.com/someshkar/birthday-wisher).
+
 ---
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
