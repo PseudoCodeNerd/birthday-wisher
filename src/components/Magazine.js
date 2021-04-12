@@ -1,7 +1,7 @@
 import React from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
-import "./Magazine.less"
+import "./Magazine.css";
 
 export default class Magazine extends React.Component {
   state = { numPages: 53, pageNumber: 1 };
@@ -19,22 +19,22 @@ export default class Magazine extends React.Component {
     const { pageNumber, numPages } = this.state;
 
     return (
-      <div className="Magazine__container">
-        <div className="Magazine__container__document">
-          <Document
-            // key={fileUrl} // optional, doesn't affect things
-            file="./src.pdf"
-            onLoadSuccess={this.onDocumentLoadSuccess}
-          >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page
-                key={`page_${index + 1}`}
-                pageNumber={index + 1}
-                width={600}
-              />
-            ))}
-          </Document>
-        </div>
+      <div id="MagContainer">
+        <Document
+          className={"Mag"}
+          file="./src.pdf"
+          onLoadSuccess={this.onDocumentLoadSuccess}
+          loading={<div>Please wait . . .</div>}
+        >
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              width={600}
+              className={"MagPage"}
+            />
+          ))}
+        </Document>
       </div>
     );
   }

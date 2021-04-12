@@ -1,11 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
-import Magazine from "./Magazine";
-import Confetti from "./Confetti";
-
-ReactDOM.render(<Confetti/>, document.getElementById('app'))
 
 const Message = styled.div`
   white-space: nowrap;
@@ -88,11 +83,6 @@ class Landing extends React.Component {
             <Button>Read Venture</Button>
           </Link>
         </Container>
-        <Switch>
-          <Route path="/src">
-            <Magazine />
-          </Route>
-        </Switch>
       </Router>
     );
   }

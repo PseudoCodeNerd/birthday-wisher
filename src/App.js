@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Message from "./components/Message";
 import Magazine from "./components/Magazine";
 import Data from "./data/Data";
-
+import Confetti from "./components/Confetti";
 
 class App extends React.Component {
   componentWillMount() {

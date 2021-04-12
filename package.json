@@ -9,6 +9,7 @@
     "react-dom": "^16.6.3",
     "react-pdf": "^5.2.0",
     "react-pdf-with-onclick": "^2.0.20",
+    "react-read-pdf": "^2.0.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-sizeme": "^2.5.2",
