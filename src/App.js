@@ -1,21 +1,38 @@
-import React from 'react'
-import BirthdayMessage from './components/BirthdayMessage'
-import BirthdayData from './data/BirthdayData'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Message from "./components/Message";
+import Magazine from "./components/Magazine";
+import Data from "./data/Data";
+
+
 class App extends React.Component {
   componentWillMount() {
-    document.body.style.background = BirthdayData.color
-    document.querySelector('title').innerText = `Happy Birthday, ${BirthdayData.wishee}!`
-    document.querySelector('.favicon').href = `//dummyimage.com/64x64/${BirthdayData.color.substring(1)}/${BirthdayData.color.substring(1)}`
-    document.querySelector('.theme-color').content = BirthdayData.color
+    document.body.style.background = Data.color;
+    document.querySelector(
+      ".favicon"
+    ).href = `//dummyimage.com/64x64/${Data.color.substring(
+      1
+    )}/${Data.color.substring(1)}`;
+    document.querySelector(".theme-color").content = Data.color;
   }
-  
+
   render() {
     return (
-      <div className='App'>
-        <BirthdayMessage birthdayData={BirthdayData}/>
-      </div>
-    )
+      <Router>
+        <Switch>
+          <Route path="/src">
+            <Magazine />
+          </Route>
+          <Route exact path="/">
+            <div className="App">
+              <Message Data={Data} />
+            </div>
+          </Route>
+        </Switch>
+      </Router>
+    );
   }
 }
 
-export default App
+export default App;
