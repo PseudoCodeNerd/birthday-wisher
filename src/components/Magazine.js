@@ -24,7 +24,11 @@ export default class Magazine extends React.Component {
           className={"Mag"}
           file="./src.pdf"
           onLoadSuccess={this.onDocumentLoadSuccess}
-          loading={<div>Please wait . . .</div>}
+          loading={
+            <div className="loadText">
+              <h1>Loading, Please Wait.</h1>
+            </div>
+          }
         >
           {Array.from(new Array(numPages), (el, index) => (
             <Page
